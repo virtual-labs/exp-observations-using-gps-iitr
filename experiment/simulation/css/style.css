@@ -1,0 +1,409 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+#panorama-360-view
+{   height: 80vh;
+    width:70vw;
+}
+#display{
+    height: 750px;
+    width:1300px;
+    background-image: url('../images/k.png');
+    z-index: 0;
+}
+#gps_device_div
+{
+    z-index: 1;
+}
+#display_div{
+    margin-top: 480px;
+    margin-left: 77px;
+    background-color: black;
+    position: absolute;
+    height: 180px;
+    width:190px;
+    z-index: 1;
+    border-radius: 5px;
+}
+#power_on{
+    margin-top: 500px;
+    margin-left: 25px;
+    font-size: 17px;
+    color: whitesmoke;
+    display:none;
+}
+#detect_sig{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: whitesmoke;
+    display:none;
+    font-weight: bolder;
+    font-size: 17px;
+    position: absolute;
+}
+#sig_img{
+    margin-top: 70px;
+    height: 30px;
+    width: 50px;
+    margin-left: 70px;
+    color: whitesmoke;
+    display:none;
+    position: absolute;
+    }
+#gps_device{
+    height: 300px;
+    width:250px;
+    margin-top: 450px;
+    margin-left: 50px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+#in{
+    height:22px;
+    width:40px;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 675px;
+    font-weight: bolder;
+    background-color: #3A3B3C;
+    color: floralwhite;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#in:hover{
+  
+    font-weight: bolder;
+    font-size: 17px;
+    color: #3A3B3C;
+    background-color: floralwhite;
+}
+#ob1,#ob2,#ob3,#ob4,#ob5,#ob6,#ob7,#ob8{ 
+    margin-left: 20px;
+    color: whitesmoke;
+    display:none;
+    font-weight: bolder;
+    font-size: 16px;
+}
+#power{
+    height:24px;
+    width:65px;
+    position: absolute;
+    margin-left: 143px;
+    margin-top: 675px;
+    font-weight: bolder;
+    background-color: #3A3B3C;
+    color: floralwhite;
+    z-index: 1;
+    cursor: pointer;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 5px;
+}
+#power:hover{
+    background-color:#E6BE03;
+    color: black;
+    font-weight: bolder;
+    font-size: 17px;
+}
+#out{
+    height:22px;
+    width:38px;
+    position: absolute;
+    margin-left: 211px;
+    margin-top: 675px;
+    font-weight: bolder;
+    background-color: #3A3B3C;
+    color: floralwhite;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+#out:hover{
+    color: #3A3B3C;
+    background-color: floralwhite;
+    font-weight: bolder;
+    font-size: 17px;
+}
+#goto{
+    height:19.5px;
+    width:42px;
+    position: absolute;
+    margin-left: 105px;
+    margin-top: 705px;
+    font-weight: bolder;
+    background-color: #3A3B3C;
+    color: floralwhite;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#goto:hover{
+    color: #3A3B3C;
+    background-color: floralwhite;
+    font-weight: bolder;
+    font-size: 14px;
+
+}
+#enter{
+    height:18.5px;
+    width:55px;
+    position: absolute;
+    margin-left: 148px;
+    margin-top: 705px;
+    font-weight: bolder;
+    background-color: #3A3B3C;
+    color: floralwhite;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#enter:hover{
+    color: #3A3B3C;
+    background-color: floralwhite;
+    font-weight: bolder;
+    font-size: 14px;
+}
+#esc{
+    height:18px;
+    width:42px;
+    position: absolute;
+    margin-left: 205px;
+    margin-top: 705px;
+    font-weight: bolder;
+    background-color: #3A3B3C;
+    color: floralwhite;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#esc:hover{
+    color: #3A3B3C;
+    background-color: floralwhite;
+    font-weight: bolder;
+    font-size: 14px;
+
+}
+#left_ar{
+    height:30px;
+    width: 28px;
+    position: absolute;
+    margin-top: 650px;
+    margin-left: 52px;
+    z-index: 1;
+}
+#left_ar:hover{
+    background-color: #3A3B3C;
+    font-weight: bolder;
+    font-size: 13px;
+
+}
+#right_ar{
+
+    height:30px;
+    width: 28px;
+    position: absolute;
+    margin-top: 646px;
+    margin-left: 265px;
+   z-index: 1;
+}
+#right_ar:hover{
+    color: #3A3B3C;
+    background-color: #3A3B3C;
+    font-weight: bolder;
+    font-size: 13px;
+
+}
+#nav{
+    height:28px;
+    width:29px;
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 685px;
+    font-weight: bolder;
+    background-color: #3A3B3C;
+    color: floralwhite;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#nav:hover{
+    color: #3A3B3C;
+    background-color: floralwhite;
+    font-weight: bolder;
+    font-size: 13px;
+
+}
+#menu{
+    height:31px;
+    width:30px;
+    position: absolute;
+    margin-left: 263px;
+    margin-top: 685px;
+    font-weight:normal;
+    background-color: #3A3B3C;
+    color: floralwhite;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+#nav:hover{
+    color: #3A3B3C;
+    background-color: floralwhite;
+    font-weight: bolder;
+    font-size: 13px;
+
+}
+#person{
+    height: 120px;
+    width: 70px;
+    position: absolute;
+    margin-top: 590px;
+    float: right;
+    margin-left: 1170px;
+    display: none;
+}
+#person2{
+    height: 120px;
+    width: 70px;
+    position: absolute;
+    margin-top: 450px;
+    float: right;
+    margin-left: 500px;
+    display: none;
+}
+#person3{
+
+    height: 70px;
+    width: 40px;
+    position: absolute;
+    margin-top: 310px;
+    float: right;
+    margin-left: 1140px;
+    display: none;
+        
+        }
+        #person4{
+
+            height: 70px;
+            width: 40px;
+            position: absolute;
+            margin-top: 330px;
+            float: right;
+            margin-left: 940px;
+            display: none;
+            
+            }
+            #person5{
+
+                height: 70px;
+                width: 40px;
+                position: absolute;
+                margin-top: 330px;
+                float: right;
+                margin-left: 700px;
+                display: none;
+                
+                }
+                #person6{
+
+                    height: 70px;
+                    width: 40px;
+                    position: absolute;
+                    margin-top: 330px;
+                    float: right;
+                    margin-left:350px;
+                   display: none;
+                    
+                    }
+                    #person7{
+
+                        height: 70px;
+                        width: 40px;
+                        position: absolute;
+                        margin-top: 330px;
+                        float: right;
+                        margin-left: 180px;
+                       display: none;
+                        
+                        }
+                        #person8{
+
+                            height: 100px;
+                            width: 50px;
+                            position: absolute;
+                            margin-top: 370px;
+                            float: right;
+                            margin-left: 420px;
+                            display: none;
+                            
+                            }
+#start{
+    height:40px;
+    width:80px;
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 690px;
+    font-weight: bolder;
+    background-color: #3A3B3C;
+    color: floralwhite;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#start:hover{
+    color: #3A3B3C;
+    background-color: #E6BE03;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+#change_loc{
+    height:40px;
+    width:80px;
+    position: absolute;
+    margin-left: 430px;
+    margin-top: 690px;
+    font-weight: bolder;
+    background-color: #3A3B3C;
+    color: floralwhite;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+}
+#change_loc:hover{
+    color: #3A3B3C;
+    background-color: #E6BE03;
+    font-weight: bolder;
+    font-size: 16px;
+
+}
+#reset{
+    height:40px;
+    width:80px;
+    position: absolute;
+    margin-left: 530px;
+    margin-top: 690px;
+    font-weight: bolder;
+    background-color: #3A3B3C;
+    color: floralwhite;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#reset:hover{
+    color: #3A3B3C;
+    background-color: #E6BE03;
+    font-weight: bolder;
+    font-size: 20px;
+
+}

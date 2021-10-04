@@ -1,39 +1,4 @@
 {
   "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
+  "questions":[{"question":"The range measurements in GPS are made with :","answers":{"a":"3 L - band frequencies","b":"2 C - band frequencies","c":"3 C - band frequencies","d":"3 C - band frequencies"},"correctAnswer":"d"},{"question":"For obtaining accurate distance of the satellite","answers":{"a":"the carrier phase measurement technique is adopted","b":"the GPS receiver slides its codes backwards until it synchronises with the satellite signals","c":"the signal arrival time is corrected for tropospheric and ionospheric delays","d":"All of these"},"correctAnswer":"a"},{"question":"GPS was invented in :","answers":{"a":"1960s","b":"1980s","c":"1970s","d":"1990s"},"correctAnswer":"c"},{"question":"GPS has been widely recognized as accurate, fast and cost-effective method for the following:","answers":{"a":"Collection of the geographic coordinate data used in GIS","b":"For movement of navigation","c":"For determination of precise orbit and altitude of low earth orbiting satellites","d":"All of these"},"correctAnswer":"d"},{"question":"Smallest GPS unit is the one :","answers":{"a":"in cars","b":"in the airplanes","c":"you can wear on wrist","d":"in the boats"},"correctAnswer":"c"}]
 }
