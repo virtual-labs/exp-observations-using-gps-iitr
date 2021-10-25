@@ -44,34 +44,38 @@ function In(){
     document.getElementById("goto").disabled = false;
 }
 
-function Goto(){
+function Goto()
+{
 
-    document.getElementById("detect_sig").style.display="none";
-    document.getElementById("sig_img").style.display="none";
-    document.getElementById("ob1").style.display="none";
-    document.getElementById("ob2").style.display="none";
-    document.getElementById("ob3").style.display="none";
-    document.getElementById("ob4").style.display="none";
-    document.getElementById("ob5").style.display="none";
-    document.getElementById("ob6").style.display="none";
-    document.getElementById("ob7").style.display="none";
     if(document.getElementById("ob8").style.display === 'inline')
     {
 
         document.getElementById("ob8").style.display = "none";
         document.getElementById("goto").disabled = true;
-        setTimeout(function(){ swal({title:"Success",text:"Click on the NAVIGATION Button to check all the readings stored. ",icon: "success",button: "ok",}) }, 500);
+        setTimeout(function(){ swal({title:"Success",text:"Now click on the NAVIGATION Button to check all the readings stored. ",icon: "success",button: "ok",}) }, 500);
         document.getElementById("nav").disabled = false;
-
-
     }
-    document.getElementById("ob8").style.display="none";
-    setTimeout(function(){ swal({title:"Success",text:"Observations are saved successfully!! ",icon: "success",button: "ok",}) }, 500);
-    setTimeout(function(){ swal({title:"Message",text:"Click on change location ",icon: "success",button: "ok",}) }, 2500);
-    document.getElementById("change_loc").disabled = false;
-    document.getElementById("power").disabled = true;
-    document.getElementById("enter").disabled = true;
-    document.getElementById("in").disabled = true;
+    else
+    {
+        
+        document.getElementById("detect_sig").style.display="none";
+        document.getElementById("sig_img").style.display="none";
+        document.getElementById("ob1").style.display="none";
+        document.getElementById("ob2").style.display="none";
+        document.getElementById("ob3").style.display="none";
+        document.getElementById("ob4").style.display="none";
+        document.getElementById("ob5").style.display="none";
+        document.getElementById("ob6").style.display="none";
+        document.getElementById("ob7").style.display="none";
+        document.getElementById("ob8").style.display="none";
+        setTimeout(function(){ swal({title:"Success",text:"Observations are saved successfully!! ",icon: "success",button: "ok",}) }, 500);
+        setTimeout(function(){ swal({title:"Message",text:"Click on change location ",icon: "success",button: "ok",}) }, 2500);
+        document.getElementById("change_loc").disabled = false;
+        document.getElementById("power").disabled = true;
+        document.getElementById("enter").disabled = true;
+        document.getElementById("in").disabled = true;
+    
+    }
 
 
 }

@@ -1,7 +1,7 @@
 ### Introduction
 <br>
 GPS measures the time phase difference of signals travelled from satellite to receiver instrument and computes the distance using simple relationship "distance = velocity*time" and then determines the coordinates using empheris of the satellites.<br>
-This experiment is useful to study of measurements Using GPS.<br>
+This experiment is useful to study of measurements using GPS.<br>
 
 ### Principle
 <br>
@@ -9,16 +9,16 @@ GPS measures the time phase difference of signals travelled from satellite to re
 
 ### Equipments Used <br>
 
- 1) Receiver.<br>
- 2) Controller (display and commands).<br>
- 3) Battery for power supply.<br>
- 4) Tripod or stand.<br><br>
+ 1) Receiver<br>
+ 2) Controller (display and commands)<br>
+ 3) Battery for power supply<br>
+ 4) Tripod or stand<br><br>
 
 ### Dos and Don'ts<br>
 
 ####Dos<br>
 
-1) Always calibrate the GPS Receiver to a known benchmark.<br>
+1) Always calibrate the GPS receiver to a known benchmark.<br>
 2) Always take the observations when more than four satellites are tracked as it will give a better intersection.<br>
 3) Spend more than 5 minutes for observation on each point in order to have better mean value.<br>
 4) Use DGPS technique if higher accuracy of observation is desired.<br>

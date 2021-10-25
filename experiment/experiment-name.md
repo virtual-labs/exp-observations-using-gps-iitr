@@ -1,1 +1,1 @@
-## Measurements Using GPS.
+## Measurements using GPS.

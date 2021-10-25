@@ -1,1 +1,1 @@
-#### To find out location (Planimetric coordinates and elevations) of various points using GPS.
+#### To find out location (planimetric coordinates and elevations) of various points using GPS.
