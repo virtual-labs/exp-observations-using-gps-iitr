@@ -24,7 +24,7 @@ function enter(){
     document.getElementById("power_on").style.display="none";
     document.getElementById("detect_sig").style.display="inline";
     document.getElementById("sig_img").style.display="inline";
-    setTimeout(function(){ swal({position:'top-end', title:"Message",text:"Signals from minimum eight satellites are required.Click on IN button for observations",icon: "info",button: "ok",}) }, 1000);
+    setTimeout(function(){ swal({position:'top-end', title:"Message",text:"Signals from minimum four satellites are required.Click on IN button for observations",icon: "info",button: "ok",}) }, 1000);
     document.getElementById("in").disabled = false;
     
 }
@@ -290,3 +290,4 @@ function left_ar()
     }
 
 }
+
