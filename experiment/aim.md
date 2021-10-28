@@ -1,1 +1,1 @@
-### Aim of the experiment
+#### To find out location (planimetric coordinates and elevations) of various points using GPS.
