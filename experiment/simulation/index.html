@@ -1,106 +1,19 @@
 <html>
 <head>
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pannellum/2.5.6/pannellum.css" integrity="sha512-UoT/Ca6+2kRekuB1IDZgwtDt0ZUfsweWmyNhMqhG4hpnf7sFnhrLrO0zHJr2vFp7eZEvJ3FN58dhVx+YMJMt2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pannellum/2.5.6/pannellum.js" integrity="sha512-EmZuy6vd0ns9wP+3l1hETKq/vNGELFRuLfazPnKKBbDpgZL0sZ7qyao5KgVbGJKOWlAFPNn6G9naB/8WnKN43Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<meta name="viewport" content="width=device-width, initial-scale=2">
+ <link href="css/style.css" rel="stylesheet" type="text/css">
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
-<script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/jquery.min.js"></script>
 </head>
-<body>
+<body >
 
-<div id="display">
-<button id="ins">INSTRUCTIONS
- </button>
-    <span id="ins_span"><b>1.</b> Click on the <b>“START Button”</b> to start the experiment.<br><br>
-
-<b>2.</b>  Click on the <b>“POWER Button”</b> on device to turn on GPS..<br><br>
-
-<b>3.</b>  Press <b>"ENTER Button"</b> to proceed.After pressing Enter, it automatically receives signals from the satellites. Signals from minimum <b>four</b> satellites are required to get accurate results. Press OK to Proceed.<br><br>
-
-<b>4.</b>  Click on the <b>"IN Button"</b> for observations. It will show the Latitude (° ‘ “),Longitude (° ‘ “) and Elevation (m) on the GPS screen. It also shows an object ID box.<br><br>
-
-<b>5.</b>  Click on the <b>"GOTO Button"</b> to store the readings in the database.<br><br>
-
-<b>6.</b>  Click on the <b>"CHANGE LOCATION Button"</b> to change the location.<br><br>
-
-<b>7.</b>  Repeat Steps 6 & 7 & take 7 more readings.<br><br>
-<b>8.</b>  Click on the <b>"NAVIGATION Button"</b> to check all the readings stored or saved in the database with the help of <b>previous</b> & <b>next</b> buttons.<br><br>
-
-<b>9.</b>  Click on the <b>“ESC Button”</b> to exit the experiment.<br><br></span>
-<div id="gps_device_div" onkeypress="myFunction(event)"><img id="gps_device" src="images/gps2.png" alt="gps device"></div>
-<div id="display_div"><br><br>
-<p id="power_on">Powering On...</p>
-<p id="detect_sig">Detecting Satellites....</p>
-<img id="sig_img" src="images/signals.gif">
-<p id="ob1">  &nbsp; Longitude : 77 53 81 N
-<br><br>
-                   &nbsp;  &nbsp; &nbsp; Latitude : 29 51 40 E<br><br>
-                   &nbsp;  &nbsp; &nbsp; Elevation : 346 m  <br><br>
-                   &nbsp;  &nbsp; &nbsp; Obj. ID : Road Point A</p>
-<p id="ob2">  &nbsp; Longitude : 77 53 69 N
-<br><br>
-                   &nbsp;  &nbsp; &nbsp; Latitude : 29 51 34 E<br><br>
-                   &nbsp;  &nbsp; &nbsp; Elevation : 334 m  <br><br>
-                   &nbsp;  &nbsp; &nbsp; Obj. ID : Road Point B</p>
-<p id="ob3">  &nbsp; Longitude : 77 53 67 N
-<br><br>
-                   &nbsp;  &nbsp; &nbsp; Latitude : 29 51 33 E<br><br>
-                   &nbsp;  &nbsp; &nbsp; Elevation : 332 m  <br><br>
-                   &nbsp;  &nbsp; &nbsp; Obj. ID : Road Point C</p>
-<p id="ob4">  &nbsp; Longitude : 77 53 61 N
-<br><br>
-                   &nbsp;  &nbsp; &nbsp; Latitude : 29 51 30 E<br><br>
-                   &nbsp;  &nbsp; &nbsp; Elevation : 326 m  <br><br>
-                   &nbsp;  &nbsp; &nbsp; Obj. ID : Tree Point A</p>
-<p id="ob5">  &nbsp; Longitude : 77 53 68 N
-<br><br>
-                   &nbsp;  &nbsp; &nbsp; Latitude : 29 51 34 E<br><br>
-                   &nbsp;  &nbsp; &nbsp; Elevation : 333 m  <br><br>
-                   &nbsp;  &nbsp; &nbsp; Obj. ID : Tree Point B</p>
-<p id="ob6">  &nbsp; Longitude : 77 53 80 N
-<br><br>
-                   &nbsp;  &nbsp; &nbsp; Latitude : 29 51 40 E<br><br>
-                   &nbsp;  &nbsp; &nbsp; Elevation : 345 m  <br><br>
-                   &nbsp;  &nbsp; &nbsp; Obj. ID : Tree Point C</p>
-<p id="ob7">  &nbsp; Longitude : 77 53 82 N
-<br><br>
-                   &nbsp;  &nbsp; &nbsp; Latitude : 29 51 41 E<br><br>
-                   &nbsp;  &nbsp; &nbsp; Elevation : 347 m  <br><br>
-                   &nbsp;  &nbsp; &nbsp; Obj. ID : Tree Point D</p>
-<p id="ob8">  &nbsp; Longitude : 77 53 66 N
-<br><br>
-                   &nbsp;  &nbsp; &nbsp; Latitude : 29 51 33 E<br><br>
-                   &nbsp;  &nbsp; &nbsp; Elevation : 331 m  <br><br>
-                   &nbsp;  &nbsp; &nbsp; Obj. ID : Field Point </p>
-</div>
-<button id="in" class="bt" disabled onclick="In()">In</button>
-<button id="out" class="bt" disabled onclick="out()">Out</button>
-<button id="esc" class="bt" onclick="esc()">Esc</button>
-<button id="enter" class="bt" disabled onclick="enter()">Enter</button>
-<button id="nav" class="bt" disabled onclick="nav()">Nav</button>
-<button id="menu" class="bt" onclick="menu()">Menu</button>
-<button id="goto" class="bt" disabled onclick="Goto()">Goto</button>
-<button id="power" class="bt" disabled onclick="power()">Power</button>
-<img id="left_ar" disabled src="images/left_arrow.png" onclick="left_ar()">
-<img id="right_ar" disabled src="images/right_arrow.png" onclick="right_ar()">
-<img id="person" src="images/person.png">
-<img id="person2" src="images/person2.png">
-<img id="person3" src="images/person3.png">
-<img id="person4" src="images/person4.png">
-<img id="person5" src="images/person5.png">
-<img id="person6" src="images/person6.png">
-<img id="person7" src="images/person7.png">
-<img id="person8" src="images/person8.png">
-
-<button id="start" class="start" onclick="start()">Start </button>
-<button id="change_loc" disabled onclick="change_loc()">Change Loc</button>
-<button id="reset" class="reset" onclick="reset()">Reset</button>
+<div id="based">
+<a href="index2.html"><button id="browser_based">Browser Based</button></a>
+ <a href="https://github.com/Virtual-Labs/surveying-lab-iitr/blob/master/src/lab/exp11/gps_exe.zip?raw=true">
+ <button id="flash_based">Flash Based </button></a>
 </div>
 <script src="js/main.js"></script>
+
 
 </body>
 </html>
