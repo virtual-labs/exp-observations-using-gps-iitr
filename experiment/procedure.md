@@ -13,7 +13,7 @@ Step-6) Click on the <b>GOTO Button</b> to store the readings in the database.<b
 
 Step-7) Click on the <b>CHANGE LOCATION Button</b> to change the location.<br><br>
 
-Step-8) Repeat Steps 6 & 7 & take 7 more readings.<br><br>
+Step-8) Repeat Steps 6 & 7 & take seven more readings.<br><br>
 
 Step-9) Click on the <b>NAVIGATION Button</b> to check all the readings stored or saved in the database with the help of <b>previous</b> & <b>next</b> buttons.<br><br>
 
